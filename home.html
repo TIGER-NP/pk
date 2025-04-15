@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homeStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="tigerlog.jpg" alt="" class="log">
+        </div>
+        <nav class="navigation-container">
+            <nav class="navigation">
+                <a href="home.html"><b>home</b></a>
+                <a href="#"><b>about</b></a>
+                <a href="#"><b>services</b></a>
+                <a href="#"><b>contact</b></a>
+                <button class="btnLogin-popup">LOGOUT</button>
+            </nav>
+            <button class="menu-button">
+                <i class="fas fa-home"></i>
+            </button>
+        </nav>
+    </header>
+
+    <video autoplay muted loop id="background-video">
+        <source src="pa.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="content">
+        <h1>Welcome!</h1>
+        <p>ALL MOVIES ARE HERE.</p>
+    </div>
+
+    <div class="movie-container">
+        <video class="movie-video" src="Tomorrow War.mp4" controls></video>
+        <video class="movie-video" src="UBUKWE.mp4" controls></video>
+        <video class="movie-video" src="movie3.mp4" controls></video>
+        </div>
+
+    <footer class="short-footer">
+        <div class="footer-content">
+            <p class="footerP">&copy; 2025 Your Company | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/direct/t/17850999635990523/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.btnLogin-popup').addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>
